@@ -44,7 +44,7 @@ const items = [
 
 const Benefits = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4">
+    <section className="max-w-7xl mx-auto px-4 pt-[7rem]">
       <div className="flex flex-col items-center justify-center">
         {/* badge */}
         <div className="w-fit">
