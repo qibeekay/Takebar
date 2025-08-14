@@ -144,7 +144,7 @@ const Form = () => {
               <div
                 className={`flex items-center justify-center w-[44px] aspect-square rounded-full bg-[#D32F2F]`}
               >
-                <img src={getImageSrc("alarm.png")} alt="" />
+                <img src={getImageSrc("siren.png")} alt="" />
               </div>
             </div>
 

@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-3 items-center relative">
           <a
             href="/"
-            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary rounded-[2px] py-3 px-6 ${
               isActive("/") ? activeStyles : ""
             }`}
           >
@@ -41,7 +41,7 @@ const Navbar = () => {
           </a>
           <a
             href="/about"
-            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary rounded-[2px] py-3 px-6 ${
               isActive("/about") ? activeStyles : ""
             }`}
           >
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           <a
             href="/savings-plans"
-            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary rounded-[2px] py-3 px-6 ${
               isActive("/savings-plans") ? activeStyles : ""
             }`}
           >
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           <a
             href="/contact"
-            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary rounded-[2px] py-3 px-6 ${
               isActive("/contact") ? activeStyles : ""
             }`}
           >
