@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: "Nunito", "sans-serif";
+
+  --color-primary: #0077a2;
+  --color-primary-light: #0095c9;
+  --color-font: #1a1a1a;
+  --color-second: #4f4f4f;
+
+  /* breakpoints */
+  --breakpoint-xs: 350px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-llg: 1200px;
+  --breakpoint-xl: 1440px;
+}
+
+@layer base {
+  .header {
+    @apply text-[28px] md:text-[36px] font-bold text-center leading-[36px] tracking-[-1px] pt-[2rem];
+  }
+
+  .text {
+    @apply text-sm md:text-base text-second text-center pt-[1rem];
+  }
+}
+
+body {
+  background-color: #f5f7fa;
+}
