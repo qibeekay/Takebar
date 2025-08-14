@@ -102,57 +102,59 @@ const Navbar = () => {
       </div>
 
       {/* mobile menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-white/60 backdrop-blur-md rounded-xl mt-2 min-h-[413px] p-[24px] w-full">
-          <div className="flex flex-col space-y-4 overflow-y-auto items-center justify-between text-center h-full">
-            <a
-              href="/"
-              className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
-                isActive("/") ? activeStyles : ""
-              }`}
-              onClick={toggleMenu}
-            >
-              Home
-            </a>
-            <a
-              href="/about"
-              className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
-                isActive("/about") ? activeStyles : ""
-              }`}
-              onClick={toggleMenu}
-            >
-              About
-            </a>
-            <a
-              href="/savings-plans"
-              className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
-                isActive("/savings-plans") ? activeStyles : ""
-              }`}
-              onClick={toggleMenu}
-            >
-              Savings Plans
-            </a>
-            <a
-              href="/contact"
-              className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
-                isActive("/contact") ? activeStyles : ""
-              }`}
-              onClick={toggleMenu}
-            >
-              Contact
-            </a>
-            <div className="w-fit mt-4">
-              <Button stroke border="border-[#E0E0E0] color='text-second' ">
-                Login
-              </Button>
-            </div>
+      <div
+        className={`lg:hidden bg-white/60 backdrop-blur-md rounded-xl mt-2 min-h-[413px] p-[24px] w-full fixed right-0 transition-all duration-700 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col space-y-4 overflow-y-auto items-center justify-between text-center h-full">
+          <a
+            href="/"
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+              isActive("/") ? activeStyles : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+              isActive("/about") ? activeStyles : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            About
+          </a>
+          <a
+            href="/savings-plans"
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+              isActive("/savings-plans") ? activeStyles : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            Savings Plans
+          </a>
+          <a
+            href="/contact"
+            className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
+              isActive("/contact") ? activeStyles : ""
+            }`}
+            onClick={toggleMenu}
+          >
+            Contact
+          </a>
+          <div className="w-fit mt-4">
+            <Button stroke border="border-[#E0E0E0] color='text-second' ">
+              Login
+            </Button>
+          </div>
 
-            <div className="w-fit mt-4">
-              <Button>Get Started</Button>
-            </div>
+          <div className="w-fit mt-4">
+            <Button>Get Started</Button>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
