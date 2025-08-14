@@ -30,7 +30,7 @@ const Navbar = () => {
         </a>
 
         {/* center links */}
-        <div className="hidden md:flex space-x-3 items-center relative">
+        <div className="hidden lg:flex space-x-3 items-center relative">
           <a
             href="/"
             className={`text-base font-medium text-[#4F4F4F] hover:text-primary hover:border-b-2 rounded-[2px] border-primary py-3 px-6 ${
@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
         {/* right buttons */}
-        <div className="hidden md:flex space-x-2 items-center">
+        <div className="hidden lg:flex space-x-2 items-center">
           <div className="w-fit">
             <Button stroke border="border-[#E0E0E0] color='text-second' ">
               Login
@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
 
         {/* hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             className="text-primary focus:outline-none cursor-pointer"
@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/60 backdrop-blur-md rounded-xl mt-2 min-h-[413px] p-[24px] w-full">
+        <div className="lg:hidden bg-white/60 backdrop-blur-md rounded-xl mt-2 min-h-[413px] p-[24px] w-full">
           <div className="flex flex-col space-y-4 overflow-y-auto items-center justify-between text-center h-full">
             <a
               href="/"

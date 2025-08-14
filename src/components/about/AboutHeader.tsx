@@ -52,7 +52,7 @@ const AboutHeader = () => {
         {/* intro */}
         <div className="text-center">
           <h1 className="text-font font-bold text-[28px] md:text-[36px] leading-[36px] md:leading-[44px] tracking-[-1%]">
-            Building Financial <span className="text-primary">Community</span>
+            Building Financial <span className="text-primary">Community</span>{" "}
              Together
           </h1>
           <p className="text-second text-sm md:text-base leading-[22px]">
